@@ -1,0 +1,73 @@
+@font-face{
+	font-family: 'springville';
+	src: url('../fonts/springville-regular3-webfont.eot');
+	src: url('../fonts/springville-regular3-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/springville-regular3-webfont.woff') format('woff'),
+	     url('../fonts/springville-regular3-webfont.ttf') format('truetype'),
+	     url('../fonts/springville-regular3-webfont.svg#webfont') format('svg');
+}
+
+@font-face{
+	font-family: 'caslon';
+	src: url('../fonts/ACaslonPro.eot');
+	src: url('../fonts/ACaslonPro.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/ACaslonPro.woff') format('woff'),
+	     url('../fonts/ACaslonPro.ttf') format('truetype'),
+	     url('../fonts/ACaslonPro.svg#webfont') format('svg');
+}
+
+.container {
+	position: relative;
+}
+
+#logo {
+	padding-top: 10px;
+}
+
+#hamburger {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 15px;
+}
+
+#phone, #login {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.slick-slide img {
+	width: 100%;
+}
+
+#mosaic {
+	margin-top: 25px;
+}
+
+#footer {
+	font-weight: bold;
+}
+
+	.instagram {
+		display: block;
+	}
+
+	.facebook {
+		display: block;
+	}
+
+	.twitter {
+		display: block;
+	}
+
+@media (min-width: 420px){
+	#logo {
+		display: inline-block;
+    padding-bottom: 25px;
+	}
+
+	#phone, #login {
+		display: inline-block;
+	}
+}
