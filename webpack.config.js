@@ -15,9 +15,8 @@ module.exports = {
         presets: ['react', 'es2015', 'stage-1']
       }
     },
-    { test: /\.less$/, loader: "style!css!less" }
-  ],
-},
+    { test: /\.less$/, loader: "style!css!less" },
+  ]},
   resolve: {
     extensions: ['', '.js', '.jsx']
   },

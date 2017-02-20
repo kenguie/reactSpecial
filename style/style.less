@@ -1,0 +1,228 @@
+.container {
+	position: relative;
+	padding: 0;
+}
+
+#header, #mosaic, #footer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#logo {
+	padding-top: 10px;
+}
+
+#hamburger {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 15px;
+}
+
+#phone, #login {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#login a {
+	color: black;
+
+	&:hover {
+		color: blue;
+	}
+}
+
+#slideshow {
+	.slick-slide img {
+		width: 100%;
+	}
+
+	.text {
+		font-family: springville;
+		padding-left: 6%;
+		padding-right: 15px;
+
+		.headline {
+			font-size: 32px;
+		}
+
+		.date {
+			font-size: 25px;
+		}
+
+		.info {
+			font-size: 18px;
+		}
+	}
+
+	@media (min-width: 900px) {
+		.slick-slide {
+			position: relative;
+		}
+
+		.text {
+			position: absolute;
+			top: 45%;
+			color: white;
+
+			.headline {
+				font-weight: bold;
+			}
+
+			.date {
+				font-weight: bold;
+			}
+
+			.info {
+				font-weight: bold;
+			}
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.text {
+			position: absolute;
+			top: 45%;
+			color: white;
+
+			.headline {
+				font-size: 48px;
+				font-weight: bold;
+			}
+
+			.date {
+				font-size: 35px;
+				font-weight: bold;
+			}
+
+			.info {
+				font-size: 25px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+#mosaic {
+	margin-top: 25px;
+	text-align: center;
+
+	img {
+		padding-top: 45px;
+	}
+
+	.date {
+		font-size: 10px;
+		padding-top: 15px;
+    padding-bottom: 15px;
+	}
+
+	.headline {
+		font-size: 35px;
+		font-family: springville;
+	}
+
+	.footnote {
+		font-size: 12px;
+		font-family: springville;
+		padding-top: 15px;
+    padding-bottom: 55px;
+		border-bottom: 1px solid rgba(0,0,0,0.2);
+		margin-bottom: 25px;
+
+		.sponsor {
+			color: black;
+			text-decoration: underline;
+
+			&:hover {
+				color: blue;
+			}
+		}
+	}
+
+	@media (min-width: 760px) {
+		.unit {
+			width: 50%;
+			display: inline-block;
+			vertical-align: top;
+
+			&-container {
+				max-width: 350px;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	@media (min-width: 900px) {
+		.headline {
+			font-size: 48px;
+		}
+
+		.unit-container {
+			text-align: left;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.unit {
+			width: 33%;
+		}
+	}
+}
+
+#footer {
+	font-weight: bold;
+	margin-bottom: 50px;
+
+	.instagram, .facebook, .twitter {
+		display: block;
+
+		a {
+			color: black;
+
+			&:hover {
+				color: blue;
+			}
+		}
+	}
+
+	@media (min-width: 640px) {
+		.instagram, .facebook, .twitter {
+			display: inline-block;
+		}
+	}
+}
+
+@media (min-width: 640px) {
+	#footer {
+		text-align: center;
+	}
+}
+
+@media (min-width: 420px){
+	#logo {
+		display: inline-block;
+    padding-bottom: 25px;
+	}
+
+	#login {
+		position: absolute;
+    display: block;
+    right: 40px;
+    top: 16px;
+	}
+
+	#phone {
+		position: absolute;
+    display: block;
+    right: 100px;
+    top: 16px;
+	}
+}
+
+@media (min-width: 544px) {
+	.container {
+		max-width: 100%;
+	}
+}

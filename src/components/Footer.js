@@ -7,9 +7,9 @@ class Footer extends Component {
     return (
       <div id="footer">
         <span className="copyright">{copyright} 2017 - SPARTA PLAESENT </span>
-        <span className="instagram">- INSTAGRAM </span>
-        <span className="facebook">- FACEBOOK </span>
-        <span className="twitter">- TWITTER </span>
+        <span className="instagram">&nbsp;- <a href="#">INSTAGRAM</a> </span>
+        <span className="facebook">&nbsp;- <a href="#">FACEBOOK</a> </span>
+        <span className="twitter">&nbsp;- <a href="#">TWITTER</a> </span>
       </div>
     )
   }

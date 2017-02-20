@@ -5,12 +5,12 @@ class Header extends Component {
     const hamburger = '\u2630';
 
     return (
-      <div>
+      <div id="header">
         <div id="logo">
           <img src="../../images/logo.jpg" />
         </div>
         <div id="phone">212.555.5555</div>
-        <div id="login">LOGIN</div>
+        <div id="login"><a href="#">LOGIN</a></div>
         <div id="hamburger">{hamburger}</div>
       </div>
     );

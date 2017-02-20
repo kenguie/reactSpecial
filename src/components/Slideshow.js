@@ -10,17 +10,39 @@ class Slideshow extends Component {
       autoplaySpeed: 5000,
       speed: 500,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      centerPadding: 0
     };
 
     return (
-      <Slick {...settings}>
-        <div><img src="../../images/IMG_275117.jpg" /><div>Test Text1</div></div>
-        <div><img src="../../images/32707-full.jpg" /><div>Test Text2</div></div>
-        <div><img src="../../images/Canadianwolf222.jpg" /><div>Test Text3</div></div>
-        <div><img src="../../images/golden eyes.jpg" /><div>Test Text4</div></div>
-        <div><img src="../../images/zoe.jpg" /><div>Test Text5</div></div>
-      </Slick>
+      <div id="slideshow">
+        <Slick {...settings}>
+          <div>
+            <img src="../../images/Layer1.jpg" />
+            <div className="text">
+              <div className="headline">Screening:<br/>DVF Secret Agent Part 2</div>
+              <div className="date">October 15, 2017</div>
+              <div className="info">Join us for a private screening of DVF Secret Agent Part 2 with our special guest, director Peter Lindberg.</div>
+            </div>
+          </div>
+          <div>
+            <img src="../../images/Layer2.jpg" />
+            <div className="text">
+              <div className="headline">Screening:<br/>DVF Secret Agent Part 2</div>
+              <div className="date">October 15, 2017</div>
+              <div className="info">Join us for a private screening of DVF Secret Agent Part 2 with our special guest, director Peter Lindberg.</div>
+            </div>
+          </div>
+          <div>
+            <img src="../../images/Layer3.jpg" />
+            <div className="text">
+              <div className="headline">Screening:<br/>DVF Secret Agent Part 2</div>
+              <div className="date">October 15, 2017</div>
+              <div className="info">Join us for a private screening of DVF Secret Agent Part 2 with our special guest, director Peter Lindberg.</div>
+            </div>
+          </div>
+        </Slick>
+      </div>
     );
   }
 }
